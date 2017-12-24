@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.agrobx.agrotic.tutorial.MainActivity">
+    <item
+        android:id="@+id/action_1"
+        android:icon="@drawable/ic_action_mountain"
+        android:orderInCategory="1"
+        android:title="action_1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_search"
+        android:title="Rechercher"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item android:id="@+id/action_share"
+        android:title="Partager"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        />
+
+</menu>

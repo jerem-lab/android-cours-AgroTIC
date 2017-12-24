@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rFR\\values-fr-rFR.xml",
+            "map": [
+                {
+                    "source": "C:\\projet_android_studio\\Tutorial\\app\\src\\main\\res\\values-fr-rFR\\string.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,65",
+                        "endColumns": "46,53",
+                        "endOffsets": "59,114"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,102",
+                        "endColumns": "46,53",
+                        "endOffsets": "97,151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\debug\\values-fr-rFR\\values-fr-rFR.xml",
+            "map": [
+                {
+                    "source": "C:\\projet_android_studio\\Tutorial\\app\\src\\main\\res\\values-fr-rFR\\string.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,65",
+                        "endColumns": "46,53",
+                        "endOffsets": "59,114"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,102",
+                        "endColumns": "46,53",
+                        "endOffsets": "97,151"
+                    }
+                }
+            ]
+        }
+    ]
+}

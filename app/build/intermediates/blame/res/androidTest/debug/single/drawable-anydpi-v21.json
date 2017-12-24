@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\Jérémy\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4f14a4a2f18c06601e12be14eb42bd15\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\Jérémy\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4f14a4a2f18c06601e12be14eb42bd15\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    }
+]

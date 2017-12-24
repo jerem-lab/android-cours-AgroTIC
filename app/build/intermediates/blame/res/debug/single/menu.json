@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\projet_android_studio\\Tutorial\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_context_text.xml",
+        "source": "C:\\projet_android_studio\\Tutorial\\app\\src\\main\\res\\menu\\menu_context_text.xml"
+    }
+]

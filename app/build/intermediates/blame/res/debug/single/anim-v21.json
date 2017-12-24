@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Jérémy\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4f14a4a2f18c06601e12be14eb42bd15\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\projet_android_studio\\Tutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Jérémy\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4f14a4a2f18c06601e12be14eb42bd15\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    }
+]

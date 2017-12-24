@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agrobx.agrotic.tutorial">
+
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.agrobx.agrotic.tutorial.personcontentprovider.WRITE" />
+    <uses-permission android:name="com.agrobx.agrotic.tutorial.personcontentprovider.READ" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <permission
+        android:name="com.agrobx.agrotic.tutorial.personcontentprovider.READ"
+        android:label="Read persons" />
+
+    <permission
+        android:name="com.agrobx.agrotic.tutorial.personcontentprovider.WRITE"
+        android:label="Write persons" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<activity android:name=".MyfirstActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".MainActivity">
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".ListPersonActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name=".ViewerPersonActivity"-->
+            <!--android:label="@string/app_name" />-->
+
+
+        <activity
+        android:name=".SecondaryActivity"
+        android:label="@string/app_name"
+        android:parentActivityName="com.agrobx.agrotic.tutorial.MainActivity">
+
+        <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.agrobx.agrotic.tutorial.MainActivity" />
+
+        <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="text/plain" />
+        </intent-filter>
+
+
+        </activity>
+
+        <receiver android:name="com.agrobx.agrotic.tutorial.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="agrobx.agrotic.tutorial.MyAction"></action>
+
+                <action android:name="android.intent.action.BATTERY_LOW"></action>
+
+                <action android:name="android.intent.action.BATTERY_OKAY"></action>
+
+                <action android:name="android.provider.Telephony.READ_SMS"></action>
+
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+
+
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.agrobx.agrotic.tutorial.PersonContentProvider"
+            android:authorities="com.agrobx.agrotic.tutorial.personcontentprovider"
+            android:readPermission="com.agrobx.agrotic.tutorial.personcontentprovider.READ"
+            android:writePermission="com.agrobx.agrotic.tutorial.personcontentprovider.WRITE"></provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="testStringArray">
+        <item>@string/item1</item>
+        <item>@string/item2</item>
+        <item>@string/item3</item>
+    </string-array>
+
+
+</resources>

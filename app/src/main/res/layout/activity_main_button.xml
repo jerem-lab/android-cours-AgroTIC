@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agrobx.agrotic.tutorial.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/webViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewid"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main" />
+
+    <TextView
+        android:id="@+id/textViewid"
+        style="@style/testStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_text"
+        app:layout_constraintBottom_toTopOf="@+id/validateButtonId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/webViewId" />
+
+
+    <Button
+        android:id="@+id/validateButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="OK"
+
+        app:layout_constraintBottom_toTopOf="@+id/framaButtonId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/textViewid" />
+
+    <Button
+        android:id="@+id/framaButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Go to Frama"
+
+        app:layout_constraintBottom_toTopOf="@+id/photoButtonId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/validateButtonId" />
+
+    <Button
+        android:id="@+id/photoButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Photo !"
+
+        app:layout_constraintBottom_toTopOf="@+id/framaButtonId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/myactionId" />
+
+    <Button
+        android:id="@+id/myactionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="call my action"
+
+        app:layout_constraintBottom_toTopOf="@+id/mynotificationId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/photoButtonId" />
+
+    <Button
+        android:id="@+id/mynotificationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="my notification"
+
+        app:layout_constraintBottom_toTopOf="@+id/itembarId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/myactionId" />
+
+
+    <Button
+        android:id="@+id/itembarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="deactivate mountain"
+
+        app:layout_constraintBottom_toTopOf="@+id/urlId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/mynotificationId" />
+
+    <Button
+        android:id="@+id/urlId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="network"
+
+        app:layout_constraintBottom_toTopOf="@+id/SensorId"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/itembarId" />
+
+
+    <Button
+        android:id="@+id/SensorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Sensor !!"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageViewid"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId"
+        app:layout_constraintTop_toBottomOf="@+id/urlId" />
+
+
+    <ImageView
+        android:id="@+id/imageViewid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/logo_agrobx"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutId"
+        app:layout_constraintRight_toRightOf="@+id/layoutId" />
+
+
+</android.support.constraint.ConstraintLayout>
